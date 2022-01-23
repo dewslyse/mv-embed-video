@@ -6,26 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embedding images and video | Youtube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="section-1">
-            <div>menu</div>
-            <div>logo</div>
+        <div class="navbar">
+            <button class="navbar-btn">
+                <img src="./images/bars-solid.svg" alt="">
+            </button>
+            <a href="#">
+                <img class="navbar-logo" src="./images/youtube-logo.png" alt="Youtube homepage">
+            </a>
         </div>
-        <div class="section-2">
-            <form action="">
-                <input type="text" name="text" id="text" placeholder="Search">
-                <button type="submit">S</button>
+
+        <div class="navbar search">
+            <form class="search-form" action="/">
+                <input class="search-input" type="text" name="text" id="text" placeholder="Search">
+                <button class="navbar-btn search-submit" type="submit">
+                    <img src="./images/search.png" alt="">
+                </button>
             </form>
-            <div>mic</div>
+            <button class="navbar-btn navbar-btn-mic">
+                <img src="./images/microphone.png" alt="Search with voice">
+            </button>
         </div>
-        <div class="section-3">
-            <div>apps</div>
-            <div>more</div>
-            <div>Sign-in</div>
+
+        <div class="navbar">
+            <button class="navbar-btn">
+                <img src="./images/youtube-apps.png" alt="Youtube apps">
+            </button>
+            <button class="navbar-btn navbar-btn-settings">
+                <img src="./images/settings.png" alt="Settings">
+            </button>
+            <button class="navbar-sign-in">
+                <img src="./images/user-circle-regular.svg" alt="">Sign in
+            </button>
         </div>
     </header>
 

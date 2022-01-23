@@ -1,29 +1,130 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+}
+
+// CSS for navbar
 .header {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
-    padding: 12px;
+    height: 70px;
+    padding: 12px 24px;
+    background-color: white;
 }
 
-.section-1,
-.section-2,
-.section-3 {
+.navbar {
     display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    width: 180px;
+    height: auto;
+    padding: 18px 14px 18px 28px;
+}
+
+.search {
+    justify-content: space-between;
+    width: 33%;
+}
+
+.search-form {
+    border: 1px solid grey;
+    border-radius: 2px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input {
+    width: 80%;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: baseline;
+    padding-top: 3px;
+    margin-left: 10px;
+    font-size: 1.125rem;
+}
+
+.navbar-btn {
+    border: none;
+    outline: none;
+    background-color: white;
+    
+    img {
+        width: 20px;
+    }
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.search-submit {
+    border-left: 1px solid grey;
+    padding: 10px 25px;
+    background-color: #f1f1f1;
+
+}
+
+.navbar-btn-mic {
+    background-color: #f1f1f1;
+    height: 42px;
+    width: 42px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    
+    img {
+        width: 20px;
+    }
+}
+
+.navbar-btn-settings {
+    margin: 0 20px 0 30px;
+
+    img {
+        height: 30px;
+    }
+}
+
+.navbar-sign-in {
+    display: flex;
+    align-items: center;
+    border: 2px solid #065fd4;
+    border-radius: 2px;
+    background-color: white;
+    padding: 10px;
+    color: #065fd4;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    img {
+        width: 25px;
+        margin-right: 10px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    margin: 15px 30px;
+    margin: 24px 100px;
 }
 
 .video {
