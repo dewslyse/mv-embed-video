@@ -1,0 +1,42 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 12px;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 30px;
+}
+
+.video {
+    border: 2px solid black;
+    width: 68%;
+}
+
+.side {
+    border: 2px solid yellow;
+    width: 30%;
+}
+
+.article-1 {
+    border: 1px solid green;
+    display: flex;
+}
