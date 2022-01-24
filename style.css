@@ -219,6 +219,93 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.video-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 24px;
+  color: #030303;
+}
+
+.video-icon img {
+  width: 22px;
+  margin-right: 5px;
+}
+
+.video-icon:hover {
+  cursor: pointer;
+}
+
+.channel {
+  margin: 20px 0 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.channel-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.channel-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.channel-img {
+  border-radius: 50px;
+}
+
+.channel-name {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 20px;
+  color: #030303;
+}
+
+.channel-btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  background-color: #c00;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 2px;
+}
+
+.channel-desc {
+  margin-left: 68px;
+  width: 60%;
+  color: #030303;
+}
+
+.channel-show-more {
+  text-transform: uppercase;
+  display: block;
+  margin-top: 30px;
+  font-size: 0.9125rem;
+  font-weight: 500;
+  color: #606060;
 }
 
 .side {

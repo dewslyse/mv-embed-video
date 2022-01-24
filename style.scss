@@ -124,6 +124,7 @@ body {
     }
 }
 
+// CSS for main section
 .container {
     display: flex;
     justify-content: space-between;
@@ -149,7 +150,6 @@ body {
     font-weight: 400;
     color: $title-col;
     font-size: 1.125rem;
-    // margin: 24px 0 18px 0;
 }
 
 .video-stats {
@@ -165,23 +165,95 @@ body {
     font-size: 2rem;
     position: relative;
     top: -3px;
-    
 }
 
 .dot {
     display: inline-flex;
-    // align-items: center;
     font-size: 2rem;
     vertical-align:super;
-    // margin-top: 10px;
-    // align-self:flex-start;
     align-content:flex-end;
 }
 
 .video-stats-icons {
     display: flex;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
+.video-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 24px;
+    color: $title-col;
+
+    img {
+        width: 22px;
+        margin-right: 5px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.channel {
+    margin: 20px 0 30px; 
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.channel-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.channel-intro {
+    display: flex;
+    align-items: center;
+}
+
+.channel-img {
+    border-radius: 50px;
+}
+
+.channel-name {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 20px;
+    color: $title-col;
+}
+
+.channel-btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    background-color: #c00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 2px;
+}
+
+.channel-desc {
+    margin-left: 68px;
+    width: 60%;
+    color: $title-col;
+}
+
+.channel-show-more {
+    text-transform: uppercase;
+    display: block;
+    margin-top: 30px;
+    font-size: 0.9125rem;
+    font-weight: 500;
+    color: #606060;
+}
+
+
+
+// CSS for side section
 .side {
     border: 2px solid yellow;
     width: 30%;
