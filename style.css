@@ -8,6 +8,7 @@
 body {
   background-color: #f1f1f1;
   font-family: 'Roboto', sans-serif;
+  color: #606060;
 }
 
 .header {
@@ -20,7 +21,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70px;
+  height: 62px;
   padding: 12px 24px;
   background-color: white;
 }
@@ -38,7 +39,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 180px;
+  width: 150px;
   height: auto;
   padding: 18px 14px 18px 28px;
 }
@@ -47,11 +48,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 33%;
+  width: 40%;
 }
 
 .search-form {
-  border: 1px solid grey;
+  border: 1px solid #ccc;
   border-radius: 2px;
   width: 90%;
   display: -webkit-box;
@@ -92,7 +93,7 @@ body {
 }
 
 .search-submit {
-  border-left: 1px solid grey;
+  border-left: 1px solid #ccc;
   padding: 10px 25px;
   background-color: #f1f1f1;
 }
@@ -133,13 +134,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #065fd4;
+  border: 1px solid #065fd4;
   border-radius: 2px;
   background-color: white;
-  padding: 10px;
+  padding: 8px 10px;
   color: #065fd4;
   font-size: 0.875rem;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -159,12 +160,152 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 24px 100px;
+  margin: 24px 60px;
 }
 
 .video {
-  border: 2px solid black;
+  border: 1px solid black;
   width: 68%;
+}
+
+.video-main {
+  width: 100%;
+  height: 540px;
+}
+
+.video-details {
+  margin: 30px 0 0 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.video-title {
+  font-weight: 400;
+  color: #030303;
+  font-size: 1.125rem;
+}
+
+.video-stats {
+  margin: 5px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.video-text::after {
+  content: ".";
+  margin: 0 4px;
+  font-size: 2rem;
+  position: relative;
+  top: -3px;
+}
+
+.dot {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 2rem;
+  vertical-align: super;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.video-stats-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.video-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 24px;
+  color: #030303;
+}
+
+.video-icon img {
+  width: 22px;
+  margin-right: 5px;
+}
+
+.video-icon:hover {
+  cursor: pointer;
+}
+
+.channel {
+  margin: 20px 0 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.channel-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.channel-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.channel-img {
+  border-radius: 50px;
+}
+
+.channel-name {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 20px;
+  color: #030303;
+}
+
+.channel-btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  background-color: #c00;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 2px;
+}
+
+.channel-desc {
+  margin-left: 68px;
+  width: 60%;
+  color: #030303;
+}
+
+.channel-show-more {
+  text-transform: uppercase;
+  display: block;
+  margin-top: 30px;
+  font-size: 0.9125rem;
+  font-weight: 500;
+  color: #606060;
 }
 
 .side {
