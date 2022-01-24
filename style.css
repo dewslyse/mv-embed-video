@@ -164,7 +164,6 @@ body {
 }
 
 .video {
-  border: 1px solid black;
   width: 68%;
 }
 
@@ -175,14 +174,14 @@ body {
 }
 
 .video-details {
-  margin: 30px 0 0 0;
+  margin: 30px 10px 0 0;
   border-bottom: 1px solid #ccc;
 }
 
 .video-title {
   font-weight: 400;
   color: #030303;
-  font-size: 1.125rem;
+  font-size: 1.375rem;
 }
 
 .video-stats {
@@ -416,13 +415,47 @@ body {
 }
 
 .side {
-  border: 2px solid yellow;
   width: 30%;
 }
 
-.article-1 {
-  border: 1px solid green;
+.side-video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 12px;
+}
+
+.side-video:hover {
+  cursor: pointer;
+}
+
+.side-img {
+  border: 0px;
+  width: 168px;
+  height: 94px;
+  margin-right: 12px;
+}
+
+.side-title {
+  font-size: 1rem;
+  color: #030303;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.side-channel {
+  font-size: 0.9125rem;
+  font-weight: 400;
+}
+
+.side-view {
+  font-size: 0.9125rem;
+}
+
+.side-separator::before {
+  content: ".";
+  margin: 0 4px;
+  font-size: 1.25rem;
+  position: relative;
+  top: -3px;
 }
